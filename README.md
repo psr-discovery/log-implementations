@@ -26,22 +26,22 @@ Successful discovery requires the presence of a compatible implementation in the
 
 The following `psr/log-implementation` implementations are discovered and instantiated automatically:
 
+-   [apix/log](https://github.com/laminas/laminas-log) ^1.0
 -   [graylog2/gelf-php](https://github.com/bzikarsky/gelf-php) ^1.2 | ^2.0
 -   [laminas/laminas-log](https://github.com/laminas/laminas-log) ^2.9
--   [apix/log](https://github.com/laminas/laminas-log) ^1.0
 -   [yiisoft/log](https://github.com/yiisoft/log) ^1.0 | ^2.0
 
 The following implementations can be discovered, but require manual instantiation due to their configuration requirements:
 
--   [monolog/monolog](https://github.com/Seldaek/monolog) ^1.11 | ^2.0 | ^3.0
 -   [google/cloud-logging](https://github.com/googleapis/google-cloud-php-logging) ^1.22.1
+-   [monolog/monolog](https://github.com/Seldaek/monolog) ^1.11 | ^2.0 | ^3.0
 -   [neos/flow-log](https://github.com/neos/flow-log) ^5.0 | ^6.0 | ^7.0 | ^8.0
 
 The following mock implementations are also available:
 
--   [psr-mock/log-implementation](https://github.com/psr-mock/log-implementation) ^1.0
 -   [colinodell/psr-testlogger](https://github.com/colinodell/psr-testlogger) ^1.0
 -   [metasyntactical/inmemory-logger](https://github.com/MetaSyntactical/inmemory-logger) ^1.0
+-   [psr-mock/log-implementation](https://github.com/psr-mock/log-implementation) ^1.0
 
 If [a particular implementation](https://packagist.org/providers/psr/log-implementation) is missing that you'd like to see, please open a pull request adding support.
 
