@@ -32,7 +32,7 @@ final class Logs extends Implementation implements LogsContract
      */
     public static function allCandidates(): CandidatesCollection
     {
-        if (self::$extendedCandidates instanceof \PsrDiscovery\Collections\CandidatesCollection) {
+        if (self::$extendedCandidates instanceof CandidatesCollection) {
             return self::$extendedCandidates;
         }
 
@@ -65,7 +65,7 @@ final class Logs extends Implementation implements LogsContract
      */
     public static function candidates(): CandidatesCollection
     {
-        if (self::$candidates instanceof \PsrDiscovery\Collections\CandidatesCollection) {
+        if (self::$candidates instanceof CandidatesCollection) {
             return self::$candidates;
         }
 
@@ -121,7 +121,7 @@ final class Logs extends Implementation implements LogsContract
      */
     public static function discover(): ?LoggerInterface
     {
-        if (self::$using instanceof \Psr\Log\LoggerInterface) {
+        if (self::$using instanceof LoggerInterface) {
             return self::$using;
         }
 
@@ -149,7 +149,7 @@ final class Logs extends Implementation implements LogsContract
 
     public static function singleton(): ?LoggerInterface
     {
-        if (self::$using instanceof \Psr\Log\LoggerInterface) {
+        if (self::$using instanceof LoggerInterface) {
             return self::$using;
         }
 
